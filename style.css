@@ -66,9 +66,11 @@ p {
   box-sizing: border-box;
   padding: var(--s-32);
 }
+
 .pre-submitted {
-  display: none;
+  display: block;
 }
+
 .card .star {
   width: 48px;
   height: 48px;
@@ -99,6 +101,11 @@ p {
   margin-right: var(--s-16);
 }
 
+.score-buttons > button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
 .score-buttons > button:nth-child(5) {
   margin: 0;
 }
@@ -111,10 +118,16 @@ p {
   background-color: var(--orange);
   color: var(--white);
   text-transform: uppercase;
+  font-weight: var(--w-bold);
+}
+
+.submit-button > button:hover {
+  background-color: var(--white);
+  color: var(--orange);
 }
 
 .submitted-form {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
