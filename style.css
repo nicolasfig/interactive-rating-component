@@ -104,7 +104,10 @@ p {
 .score-buttons > button:hover {
   background-color: var(--orange);
   color: var(--white);
+  cursor: pointer;
 }
+
+.score-buttons > button:
 
 .score-buttons > button:nth-child(5) {
   margin: 0;
@@ -124,6 +127,7 @@ p {
 .submit-button > button:hover {
   background-color: var(--white);
   color: var(--orange);
+  cursor: pointer;
 }
 
 .submitted-form {
