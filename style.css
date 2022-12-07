@@ -11,8 +11,9 @@
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
-  --dark-blue: hsl(213, 19%, 18%);
-  --darker-blue: hsl(213, 19%, 14%);
+  --dark-blue: hsl(213, 20%, 18%);
+  --dark-blue-btn: hsl(210, 15%, 20%);
+  --darker-blue: hsl(212, 18%, 12%);
   --very-dark-blue: hsl(216, 12%, 8%);
 
   /* Font */
@@ -46,10 +47,12 @@ main {
 
 h1 {
   color: var(--white);
+  margin: 0 0 var(--s-16) 0;
 }
 
 p {
   color: var(--light-grey);
+  margin: 0;
 }
 
 .card {
@@ -57,6 +60,52 @@ p {
   height: 416px;
   background: linear-gradient(var(--dark-blue), var(--darker-blue));
   border-radius: var(--s-24);
+  box-sizing: border-box;
+  padding: var(--s-32);
+}
+
+.card .star {
+  width: 48px;
+  height: 48px;
+  background-color: var(--dark-blue-btn);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: var(--s-32);
+}
+.text {
+  margin-bottom: var(--s-32);
+}
+.score-buttons {
+  margin-bottom: var(--s-32);
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
+.score-buttons > button {
+  border: none;
+  border-radius: 50%;
+  width: var(--s-48);
+  height: var(--s-48);
+  background-color: var(--dark-blue-btn);
+  color: var(--light-grey);
+  font-weight: var(--w-bold);
+  margin-right: var(--s-16);
+}
+
+.score-buttons > button:nth-child(5) {
+  margin: 0;
+}
+
+.submit-button > button {
+  border: none;
+  width: 340px;
+  height: 48px;
+  border-radius: var(--s-32);
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
 }
 
 .submited-form {
