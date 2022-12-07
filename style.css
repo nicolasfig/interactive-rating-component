@@ -48,10 +48,13 @@ main {
 h1 {
   color: var(--white);
   margin: 0 0 var(--s-16) 0;
+  font-weight: var(--w-bold);
 }
 
 p {
   color: var(--light-grey);
+  line-height: var(--s-24);
+  font-size: 15px;
   margin: 0;
 }
 
@@ -63,7 +66,9 @@ p {
   box-sizing: border-box;
   padding: var(--s-32);
 }
-
+.pre-submitted {
+  display: none;
+}
 .card .star {
   width: 48px;
   height: 48px;
@@ -72,10 +77,10 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin-bottom: var(--s-32);
+  margin-bottom: var(--s-24);
 }
 .text {
-  margin-bottom: var(--s-32);
+  margin-bottom: var(--s-16);
 }
 .score-buttons {
   margin-bottom: var(--s-32);
@@ -108,8 +113,35 @@ p {
   text-transform: uppercase;
 }
 
-.submited-form {
-  display: none;
+.submitted-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.submitted-form > h1 {
+  margin: var(--s-32) 0 var(--s-32) 0;
+}
+.submitted-form .score {
+  width: 194px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue-btn);
+  text-align: center;
+  border-radius: var(--s-32);
+  margin-top: var(--s-32);
+}
+
+.submitted-form .score > p {
+  color: var(--orange);
+}
+
+.submitted-form > p {
+  text-align: center;
+  color: var(--light-grey);
+  font-weight: var(--w-regular);
 }
 
 .attribution {
@@ -118,6 +150,10 @@ p {
   position: absolute;
   bottom: 16px;
   width: 100%;
+}
+
+.attribution p {
+  color: var(--light-grey);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
