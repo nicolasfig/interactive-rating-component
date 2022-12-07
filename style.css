@@ -107,8 +107,6 @@ p {
   cursor: pointer;
 }
 
-.score-buttons > button:
-
 .score-buttons > button:nth-child(5) {
   margin: 0;
 }
