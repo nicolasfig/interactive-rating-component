@@ -90,7 +90,7 @@ p {
   justify-content: space-between;
   width: 340px;
 }
-.score-buttons > button {
+.score-buttons .score-btn {
   border: none;
   border-radius: 50%;
   width: var(--s-48);
@@ -105,6 +105,11 @@ p {
   background-color: var(--orange);
   color: var(--white);
   cursor: pointer;
+}
+
+.score-buttons .score-btn:focus {
+  background-color: var(--light-grey);
+  color: var(--white);
 }
 
 .score-buttons > button:nth-child(5) {
