@@ -199,6 +199,15 @@ p {
   .submit-button > button {
     width: 280px;
   }
+  .submitted-form .score {
+    margin-top: var(--s-16);
+  }
+  .submitted-form > h1 {
+    margin: var(--s-16);
+  }
+  .submitted-form > p {
+    font-size: 12px;
+  }
 }
 .attribution {
   display: flex;
