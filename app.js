@@ -12,5 +12,9 @@ submit_btn.addEventListener("click", () => {
 scores.forEach((score) => {
   score.addEventListener("click", () => {
     final_score.innerHTML = score.innerHTML;
+    submit_btn.addEventListener("click", () => {
+      pre_submitted.style.display = "none";
+      submitted.style.display = "flex";
+    });
   });
 });
